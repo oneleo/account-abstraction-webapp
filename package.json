@@ -1,0 +1,22 @@
+{
+  "name": "account-abstraction-webapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:oneleo/account-abstraction-webapp.git",
+  "author": "Irara <irara.chen@token.im>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/@account-abstraction/contracts",
+      "**/@account-abstraction/contracts/**",
+      "**/@openzeppelin/contracts",
+      "**/@openzeppelin/contracts/**",
+      "**/@chainlink/contracts",
+      "**/@chainlink/contracts/**"
+    ]
+  }
+}
